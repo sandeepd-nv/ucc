@@ -1,0 +1,27 @@
+package:
+  name: ucc
+  version: "0.1.0"
+
+source:
+  path: ..
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - automake
+    - libtool
+    - make
+
+  host:
+    - ucx
+    - cudatoolkit
+  run:
+    - ucx
+    - cudatoolkit
+
+# test:
+#   commands:
+#     - test -f $PREFIX/lib/ucc
