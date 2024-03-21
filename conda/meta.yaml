@@ -17,10 +17,10 @@ requirements:
 
   host:
     - ucx
-    - cudatoolkit
+    - cuda-toolkit
   run:
     - ucx
-    - cudatoolkit
+    - cuda-toolkit
 
 # test:
 #   commands:
